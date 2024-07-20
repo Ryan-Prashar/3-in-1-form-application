@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="Register_webpage.css">
+
+</head>
+<body>
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <div class="Register-form" id="registerationform">
+        <h1>Create An Account</h1> 
+            <form action="https://script.google.com/macros/s/AKfycbxLtBHG5_sTWeDHzGqiVXrWYWFUNwpyeDsyHz1AupdW7P0hDeKv3hQvmDtZp_4xaPk/exec " method="post"> 
+
+            <div class="input-box"> 
+                <input type="text" name="name" placeholder="Name" required>
+                <i class="fa-solid fa-user"></i> 
+            </div>
+            
+            <div class="input-box"> 
+                <input type="email" name="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box"> 
+                <input type="password" name="password" placeholder="Create Password" class="password" required>
+                <i class="fa-solid fa-lock"></i> 
+            </div>
+
+            <div class="input-box"> 
+                <input type="password" placeholder="Confirm Password" class="confirmPassword" required>
+            </div>
+
+            <div class="terms-conditions">
+                <label>
+                    <input type="checkbox" required> I agree to the Terms & Conditions
+                </label>
+            </div>
+            
+            <button type="submit" onclick="checkPassword()" class="signup-btn">Sign Up</button>
+
+            <div class="login-link"> 
+                <p>Already have an account? <a href="Login_website.html" id="Login">Sign In</a></p>
+            </div>
+        </form>
+    </div>
+    
+    <script src="register_script.js"></script> 
+
+</body>
+</html>
